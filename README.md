@@ -31,11 +31,13 @@ Projekt składa się z dwóch głównych etapów:
    * Transformacja logarytmiczna zmiennej zależnej (Log-Lin Model) w celu stabilizacji wariancji i spłaszczenia rozkładu cen.
    * Zabezpieczenie przed idealną współliniowością (Dummy Variable Trap) poprzez celowe wykluczenie kategorii bazowej.
    * Weryfikacja stabilności algorytmu za pomocą powtarzanej walidacji krzyżowej (Repeated 5-Fold CV na 50 iteracjach).
+   * Twarda diagnostyka ekonometryczna: weryfikacja braku współliniowości zmiennych za pomocą wskaźnika VIF (Variance Inflation Factor) oraz wizualna analiza reszt (Residuals vs Fitted plot) potwierdzająca homoskedastyczność.
 
 ## Główne Wnioski Analityczne (Insights)
 * **Model OLS (Log-Lin)** zredukowany do 4 kluczowych makroregionów osiągnął stabilną wartość **R² na poziomie ok. 64%** na danych testowych w walidacji krzyżowej.
 * **Znaczenie metrażu:** Każdy dodatkowy metr kwadratowy powierzchni zwiększa wycenę nieruchomości średnio o 1,65% (ceteris paribus).
 * **Premia za prestiż:** Algorytm potwierdził, że mieszkania zlokalizowane w obrębie centralnego pasma Gdańska (np. Wrzeszcz, Śródmieście, Oliwa) są wyceniane średnio o ~38% wyżej w stosunku do dzielnic przemysłowo-portowych (bazy).
+* **Pozytywna diagnostyka modelu:** Ostateczny model pomyślnie przeszedł testy założeń klasycznej regresji. Odpowiednie grupowanie makroregionów wyeliminowało problem współliniowości (wartości VIF bezpiecznie poniżej progu alarmowego), a transformacja Log-Lin skutecznie ustabilizowała wariancję błędów.
 
 ## 🚀 Jak uruchomić projekt (How to Run)
 1. **Sklonuj repozytorium** na swój komputer.
