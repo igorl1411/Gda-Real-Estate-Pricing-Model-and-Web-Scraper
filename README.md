@@ -1,1 +1,1 @@
-# Gda-sk-Real-Estate-Pricing-Model-and-Web-Scraper
+# Gdańsk-Real-Estate-Pricing-Model-and-Web-Scraper
