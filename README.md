@@ -34,7 +34,7 @@ Projekt składa się z dwóch głównych etapów:
    * Zabezpieczenie przed idealną współliniowością (Dummy Variable Trap) poprzez celowe wykluczenie kategorii bazowej.
    * Weryfikacja stabilności algorytmu za pomocą powtarzanej walidacji krzyżowej (Repeated 5-Fold CV na 50 iteracjach).
    * Twarda diagnostyka ekonometryczna: weryfikacja braku współliniowości zmiennych za pomocą wskaźnika VIF (Variance Inflation Factor) oraz wizualna analiza reszt (Residuals vs Fitted plot) potwierdzająca homoskedastyczność.
-3. **Wdrożenie Modelu (`app.py`):** 
+3. **Wdrożenie Modelu (`app2.py`):** 
    Eksport wytrenowanego algorytmu i stworzenie interaktywnej aplikacji webowej w oparciu o framework Streamlit. Aplikacja posiada graficzny interfejs (GUI), który pozwala użytkownikowi końcowemu na wpisanie metrażu, wybór makroregionu i uzyskanie błyskawicznej, szacunkowej wyceny nieruchomości.
 
 ## Główne Wnioski Analityczne (Insights)
