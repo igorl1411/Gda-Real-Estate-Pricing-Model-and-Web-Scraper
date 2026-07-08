@@ -1,25 +1,19 @@
-# Środowiska wirtualne
 .venv/
 venv/
 env/
 
-# Jupyter Notebook
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 
-# IDE i edytory
 .idea/
 .vscode/
 
-# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Pliki rozgrzewkowe / robocze
 *rozgrzewka*.ipynb
 Untitled*.ipynb
 
-# Ewentualne logi i systemowe
 .DS_Store
 Thumbs.db
