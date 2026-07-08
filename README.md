@@ -7,6 +7,7 @@ Celem projektu było stworzenie narzędzia typu End-to-End do zautomatyzowanego 
 * **Przetwarzanie Danych:** Pandas, NumPy, Regex (Wyrażenia regularne)
 * **Feature Engineering:** Geopy (Geokodowanie), One-Hot Encoding
 * **Machine Learning / Ekonometria:** statsmodels (OLS), scikit-learn (LinearRegression, RepeatedKFold)
+* **Wdrożenie (Deployment):** Streamlit, joblib
 
 ## Struktura Projektu (Project Structure)
 ```text
@@ -14,6 +15,7 @@ webscraper/
 │
 ├── 01_scraper_olx.py                            # Skrypt pobierający dane z OLX
 ├── 02_03_data_engineering_and_modeling.ipynb    # Notatnik Jupyter z czyszczeniem danych i modelowaniem
+├── app2.py                                      # Interaktywna aplikacja webowa (Streamlit)
 ├── OLX_Mieszkania_Gdansk.xlsx                   # Baza pobranych danych (przykładowa)
 ├── requirements.txt                             # Plik z wymaganymi bibliotekami
 └── .gitignore                                   # Pliki ignorowane w repozytorium
@@ -32,6 +34,8 @@ Projekt składa się z dwóch głównych etapów:
    * Zabezpieczenie przed idealną współliniowością (Dummy Variable Trap) poprzez celowe wykluczenie kategorii bazowej.
    * Weryfikacja stabilności algorytmu za pomocą powtarzanej walidacji krzyżowej (Repeated 5-Fold CV na 50 iteracjach).
    * Twarda diagnostyka ekonometryczna: weryfikacja braku współliniowości zmiennych za pomocą wskaźnika VIF (Variance Inflation Factor) oraz wizualna analiza reszt (Residuals vs Fitted plot) potwierdzająca homoskedastyczność.
+3. **Wdrożenie Modelu (`app.py`):** 
+   Eksport wytrenowanego algorytmu i stworzenie interaktywnej aplikacji webowej w oparciu o framework Streamlit. Aplikacja posiada graficzny interfejs (GUI), który pozwala użytkownikowi końcowemu na wpisanie metrażu, wybór makroregionu i uzyskanie błyskawicznej, szacunkowej wyceny nieruchomości.
 
 ## Główne Wnioski Analityczne (Insights)
 * **Model OLS (Log-Lin)** zredukowany do 4 kluczowych makroregionów osiągnął stabilną wartość **R² na poziomie ok. 64%** na danych testowych w walidacji krzyżowej.
@@ -50,4 +54,7 @@ Projekt składa się z dwóch głównych etapów:
    python 01_scraper_olx.py
    ```
 4. **Uruchomienie analizy:** Otwórz Jupyter Notebook i uruchom plik `02_03_data_engineering_and_modeling.ipynb`.
-
+5. **Uruchomienie aplikacji webowej (Kalkulator Cen):**
+   Aby uruchomić interaktywny interfejs z poziomu przeglądarki, upewnij się, że jesteś w folderze z projektem i wpisz w terminalu:
+   ```bash
+   streamlit run app.py
