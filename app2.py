@@ -30,7 +30,7 @@ model = load_model()
 # 3. Interfejs użytkownika (Pasek boczny)
 st.sidebar.header("Parametry Mieszkania")
 
-powierzchnia = st.sidebar.slider("Metraż (m²)", min_value=15.0, max_value=150.0, value=50.0, step=1.0)
+powierzchnia = st.sidebar.slider("Metraż (m²)", min_value=30.0, max_value=150.0, value=50.0, step=1.0)
 
 # Nasze 4 główne makroregiony
 makroregion = st.sidebar.selectbox("Wybierz lokalizację:", [
