@@ -57,4 +57,4 @@ Projekt składa się z dwóch głównych etapów:
 5. **Uruchomienie aplikacji webowej (Kalkulator Cen):**
    Aby uruchomić interaktywny interfejs z poziomu przeglądarki, upewnij się, że jesteś w folderze z projektem i wpisz w terminalu:
    ```bash
-   streamlit run app.py
+   streamlit run app2.py
