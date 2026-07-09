@@ -43,6 +43,13 @@ Projekt składa się z dwóch głównych etapów:
 * **Premia za prestiż:** Algorytm potwierdził, że mieszkania zlokalizowane w obrębie centralnego pasma Gdańska (np. Wrzeszcz, Śródmieście, Oliwa) są wyceniane średnio o ~38% wyżej w stosunku do dzielnic przemysłowo-portowych (bazy).
 * **Pozytywna diagnostyka modelu:** Ostateczny model pomyślnie przeszedł testy założeń klasycznej regresji. Odpowiednie grupowanie makroregionów wyeliminowało problem współliniowości (wartości VIF bezpiecznie poniżej progu alarmowego), a transformacja Log-Lin skutecznie ustabilizowała wariancję błędów.
 
+## Prosta aplikacja
+
+
+https://github.com/user-attachments/assets/36f74620-f0a6-4db2-a48a-160caec85678
+
+
+
 ## 🚀 Jak uruchomić projekt (How to Run)
 1. **Sklonuj repozytorium** na swój komputer.
 2. **Zainstaluj wymagane biblioteki** za pomocą pliku `requirements.txt`:
